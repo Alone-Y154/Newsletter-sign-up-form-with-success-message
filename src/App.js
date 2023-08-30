@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Signup } from "./components/SignUp";
+import { ThankYou } from "./components/ThankYou";
 
-function App() {
+
+function App(props) {
+  const [state,setState] = useState(true);
+  const [mail, setMail] = useState("");
+
+  // const onSignUp = () => {
+    
+  // }
+
+  const getData = (email) => {
+    setMail(email);
+    setState(!state);
+  }
+  const change = () => {
+    setState(!state);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {state ? 
+      <Signup data={getData}/> : 
+      <ThankYou userMail = {mail} thankYou = {change}/>}
+{/* 
+      <Signup mail={inputMail} />
+
+      <ThankYou userMail = {mail} /> */}
+    </>
   );
 }
 

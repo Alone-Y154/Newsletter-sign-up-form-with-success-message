@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: hsl(235, 18%, 26%);
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+  }
+  
+  .sign-up {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    background: white;
+    border-radius: 25px;
+    padding: 1.5rem;
+  }
+  
+  .sign-up-content {
+    padding: 1rem 3.91rem 3rem 2rem;
+  }
+  
+  .sign-up-heading {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: hsl(234, 29%, 20%);
+  }
+  
+  .sign-up-description {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    color: hsl(235, 18%, 26%);
+  }
+  
+  .sign-up-list p {
+    padding-bottom: 0.5rem;
+    color: hsl(235, 18%, 26%);
+  }
+  
+  .sign-up-list span {
+    padding-right: 1rem;
+    position:  relative;
+    top: 0.3rem;
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    display: flex;
+    justify-content: space-between;
+  }
+  .input  label {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .label p {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color:  hsl(4, 100%, 67%);
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  /* .input input:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 2px solid  hsl(4, 100%, 67%);
+    color: hsl(4, 100%, 67%);
+  } */
+  .input  input {
+    height: 3rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid hsl(231, 7%, 60%);
+    /* padding: 2rem; */
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    cursor: pointer;
+  }
+  
+  
+  .input button {
+      height: 3rem;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      background: hsl(234, 29%, 20%);
+      cursor: pointer;
+      font-weight: 700;
+  }
+  
+  .input button:hover {
+    background: hsl(4, 100%, 67%);
+  }
+  
+  .sign-up-img-desktop {
+    width: 300px;
+    height: 452px;
+  }
+  
+  .sign-up-img-mobile {
+    display: none;
+  }
+  .thank-you-container {
+    /* display: none; */
+    display: flex;
+    /* justify-content: center; */
+    width: 500px;
+    height: 500px;
+    background: white;
+    border-radius: 25px;
+    padding: 4rem;
+  }
+  
+  .thank-you img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .thank-you h1 {
+    font-size: 3.5rem;
+  }
+  
+  .thank-you p {
+    font-size: 16px;
+    color: hsl(235, 18%, 26%);
+    margin-top: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .thank-you p span {
+    font-weight: bold;
+  }
+  
+  .thank-you button {
+    width: 100%;
+    margin-top: 2rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: hsl(234, 29%, 20%);
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  .thank-you button:hover {
+    background: hsl(4, 100%, 67%);
+  }
+  
+  .active {
+    display: flex;
+  }
+  
+  .not-active {
+    display: none;
+  }
+  
